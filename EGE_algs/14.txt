@@ -1,0 +1,37 @@
+for x in range(0,15):
+    num = 1*15**4+2*15**3
+№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+
+print(int('400',5))
+print(bin(100))
+print(oct(100))
+print(hex(100))
+
+x = 100
+x5 = ''
+while x!=0:
+    x5+=str(x%5)
+    x//=5
+print(int(x5[::-1]))
+
+count = 0
+num = 49**7 + 7**21 - 7
+while num!= 0:
+    if num%7==6:
+        count+=1
+    num//=7
+print(count)
+
+print(bin(4**2014+2**2015-8)[2:].count('1'))
+
+num = 7*512**1912+6*64**1954-5*8**1991-4*8**1980-2022
+print(oct(num)[2:].count('7'))
+
+for x in '0123456789ABCDE':
+    num = int('123'+x+'5',15) + int('1'+x+'233',15)
+    if num%14==0:
+        print(num//14)
+        break
+
+
+
